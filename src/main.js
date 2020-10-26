@@ -4,6 +4,8 @@ import router from './router'
 import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false
+require("./assets/main.scss")
+
 
 new Vue({
   router,

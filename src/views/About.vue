@@ -1,20 +1,13 @@
 <template>
-  <v-app>
-    
-    <v-card width="50%" class="mx-auto mt-15">
-      <v-card-title>
-        <h1 class="display-1"> About</h1>
-      </v-card-title>
-      <v-card-text>
-        App that tracks exercises and allows you to share with friends!
-      </v-card-text>
-    </v-card>
-  </v-app>
+  <div>
+    <h1> About Page </h1>
+    <p> This website is made by Alexandra Maceda for Fall 2020 Web Programming class </p>
+  </div>
 </template>
 <script>
   export default {
     name: 'About',
-
+    
     data: () => ({ }),
   }
 </script>
