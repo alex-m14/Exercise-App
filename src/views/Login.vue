@@ -2,13 +2,13 @@
   <div>
     <div class="tabs">
       <ul>
-        <li class="tablinks is-active" @click="openTab(event, 'Login')">
+        <li class="tablinks" @click="currentTab='Login'" :class="{'is-active':currentTab=='Login'}">
           <a>Login</a>
         </li>
-        <li class="tablinksc  " @click="openTab(event, 'Register')"><a>Register</a></li>
+        <li class="tablinksc  " @click="currentTab='Register'" :class="{'is-active':currentTab=='Register'}"><a>Register</a></li>
       </ul>
     </div>
-    <div id="Login" class="tabcontent">
+    <div id="Login" class="tabcontent" :class="{block:currentTab=='Login'}">
       <div class="field">
         <label class="label"> Username</label>
         <div class="control">
@@ -24,7 +24,7 @@
       <button class="button">Login</button>
     </div>
 
-    <div id="Register" class="tabcontent">
+    <div id="Register" class="tabcontent" :class="{block:currentTab=='Register'}">
       <div class="field">
         <label class="label"> Username</label>
         <div class="control">
@@ -52,31 +52,21 @@
 export default {
   name: "Login",
   components: {},
+  data:() => ({
+    currentTab: 'Login'
+  }),
   methods: {
-    openTab(event, tabId) {
-      var tabcontent = document.getElementsByClassName('tabcontent');
-      for (var i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = 'none';
-      }
-
-      var tablinks = document.getElementsByClassName('tablinks');
-      for (var i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(' is-active', '');
-      }
-
-      document.getElementById(tabId).style.display = 'block';
-      event.currentTarget.className += ' is-active';
-    }
+    
   }
 };
 </script>
 
-<style>
+<style type='scss'>
 .tabcontent{
     display: none;
-
+    
 }
-#Login{
-    display: block;
+.block{
+  display: block;
 }
 </style>
