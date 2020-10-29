@@ -2,10 +2,10 @@
 <nav class="navbar is-success max-width" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="">
-      <i class="fas fa-heartbeat is-large"></i>
+      <i class="fas fa-heartbeat is-large "></i>
     </a>
 
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar" >
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -24,12 +24,22 @@
           <router-link class="button is-primary" to= "/Login">
             <strong>Register/Login</strong>
           </router-link>
-          <a class="button is-light">
+          <router-link class="button is-light" to="/AdminPage">
             Admin
-          </a>
+          </router-link>
         </div>
       </div>
     </div>
   </div>
 </nav>
 </template>
+
+<script>
+export default {
+  
+}
+</script>
+
+<style>
+
+</style>
