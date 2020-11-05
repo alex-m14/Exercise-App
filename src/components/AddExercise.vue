@@ -38,8 +38,8 @@ export default {
     methods:{
         addExercise(){
             this.exercise_items.push({
-                exercise_type:'',
-                exercise_duration:''
+                exercise_type:exercise_items.exercise_type,
+                exercise_duration:exercise_items.exercise_duration
             })
         }
     }
