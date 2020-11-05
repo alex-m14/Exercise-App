@@ -46,7 +46,7 @@
       <button class="button">Register</button>
     </div>
   </div>
-</template>
+</template> 
 
 <script>
 export default {

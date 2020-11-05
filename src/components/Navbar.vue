@@ -5,14 +5,14 @@
       <i class="fas fa-heartbeat is-large "></i>
     </a>
 
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+    <a role="button" class="navbar-burger burger" :class="{ 'is-active': isActive }" @click="isActive = !isActive" aria-label="menu" aria-expanded="false" data-target="navbar">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
   </div>
 
-  <div id="navbar" class="navbar-menu" >
+  <div id="navbar" class="navbar-menu" :class="{ 'is-active': isActive }">
     <div class="navbar-start">
         <router-link class= "navbar-item" to = "/"> Home </router-link> 
         <router-link class= "navbar-item" to = "/About" > About </router-link>
@@ -36,7 +36,9 @@
 
 <script>
 export default {
-  
+  data: ()=>({
+    isActive:false
+  })
 }
 </script>
 
