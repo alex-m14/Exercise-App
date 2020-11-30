@@ -1,13 +1,13 @@
 const mysql = require("mysql");
+require('dotenv').config();
 
 const pool = mysql.createPool({
-    connectionLimit: 10, 
-    host: process.env.MYSQL_HOST,
-    user: process.env.MYSQL_USER,
-    password: process.env.MYSQL_PASSWORD,
-    database: process.env.MYSQL_DATABASE
-  });
-
+  connectionLimit: 10,
+  host: process.env.MYSQL_HOST,
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DATABASE
+});
 // const query = (sql, binding) => {
 // return new Promise((resolve, reject) => {
 //     pool.query(sql, binding, (err, result, fields) => {
@@ -19,6 +19,6 @@ const pool = mysql.createPool({
 
 // module.exports = { pool, query };
 
-pool.query("SELECT * FROM `EX_Fall_2020_Users` ", (err,rows) =>{
-    console.log(rows);
-})
+pool.query("SELECT * FROM `EX_Fall_2020_Users` ", (err, rows) => {
+  console.log(rows);
+});
