@@ -5,7 +5,7 @@
     </div>
     <div class="row">
       <p style="font-size: 20px">
-        Register or login to enter your workout today!<br />
+        Register or login to enter your workout today!!<br />
       </p>
     </div>
     <div class="row">
