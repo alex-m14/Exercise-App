@@ -10,7 +10,7 @@
     </div>
     <div class="row">
       <router-link class="button is-primary" to="/Form"
-        >Add Exercise</router-link
+        >-Add Exercise-</router-link
       >
     </div>
   </div>
