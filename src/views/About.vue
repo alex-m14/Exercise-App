@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1> About Page </h1>
-    <p> This website is made by Alexandra Maceda for Fall 2020 Web Programming class </p>
+    <p> This website is made by Alexandra Maceda for Fall 2020 Web Programming class-- </p>
     <section>
         <p class="content"><b>Selected:</b> {{ selected }}</p>
         <b-field label="Search for your Followers">
