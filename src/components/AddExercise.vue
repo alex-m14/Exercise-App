@@ -20,6 +20,7 @@
             </div>
           </div>
         </div>
+        
         <div class="level-item">
           <input class="button is-primary" type="submit" value="Add" @click="addExercise" >
         </div>
